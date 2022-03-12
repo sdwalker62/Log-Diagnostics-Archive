@@ -1,0 +1,22 @@
+# ignore databases since those are too large
+*.db
+
+# ignore .joblib files since they are generated
+*.joblib
+
+data/*
+
+# results will grow to large due to checkpoints
+results/**
+
+!data/.gitkeep
+!results/.gitkeep
+!docs/.gitkeep
+
+/venv/
+
+# Ignore all zone identifier files with pushing from WSL2 on windows 
+*:Zone.Identifier
+
+# Ignore Mac folder meta data
+.DS_Store
